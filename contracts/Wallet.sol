@@ -3,7 +3,7 @@ pragma solidity >=0.4.22 <0.9.0;
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
 interface IYDAI {
-    // functions taken from "https://github.com/yearn/itoken/blob/master/contracts/YDAIv3.sol"
+    
     function deposit(uint _amount) external;
     function withdraw(uint _shares) external;
     function balanceOf(address account) external view returns(uint);
@@ -13,7 +13,7 @@ interface IYDAI {
 contract Wallet {
     address admin;
 
-    // dai address from EtherScan typeIn Dai Stable coin
+    
     IERC20 dai = IERC20(0x6B175474E89094C44Da98b954EedeAC495271d0F);
     IYDAI yDai = IYDAI(0xC2cB1040220768554cf699b0d863A3cd4324ce32);
 
